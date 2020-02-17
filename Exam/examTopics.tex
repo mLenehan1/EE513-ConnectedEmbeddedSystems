@@ -1,0 +1,107 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[UKenglish]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	top=20mm,
+	headheight=9pt,
+	bottom=20mm,
+}
+\pagestyle{empty}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+\begin{document}
+\thispagestyle{empty}
+	\begin{table}[h]
+		\centering
+		\caption{EE513 Connected Embedded Systems Short Questions}
+		\begin{tabular}{|c||c|c||c|c||c|c||}
+			\hline
+			\hline
+			Topic & 2019 & R & 2018 & R & 2017 & R \\
+			\hline
+			Micro vs. Monolithic Kernel & \checkmark & & &
+			\checkmark & \checkmark & \\
+			Das U-Boot & \checkmark & & & \checkmark & \checkmark & \\
+			VCAN & \checkmark & & & & & \\
+			I/O Pins & \checkmark & \checkmark & \checkmark & & & \\
+			Mount Output & \checkmark & & & & & \\
+			Soft vs. Hardlink & \checkmark & & & & \checkmark & \\
+			Mutex Lock & \checkmark & & \checkmark & \checkmark &
+			\checkmark & \\
+			PS and PL & \checkmark & \checkmark & \checkmark & & &
+			\checkmark \\
+			UART & \checkmark & & & & & \\
+			systemd Target Units & \checkmark & & & \checkmark &
+			\checkmark & \\
+			PREEMPT patch & \checkmark & \checkmark & \checkmark & &
+			\checkmark & \checkmark \\
+			Open-Collector/Drain circuit & \checkmark & & &
+			\checkmark & \checkmark & \\
+			Watchdog Timer & \checkmark & & & & & \\
+			6LowPAN stateless header compression & & \checkmark & &
+							     & & \\
+			Beacon Frames & & \checkmark & & & & \\
+			LPWAN & & \checkmark &\checkmark & & & \checkmark \\
+			Balanced Signalling & & \checkmark & \checkmark & & &
+			\checkmark \\
+			gitignore & & \checkmark & & & & \\
+			Qt & & \checkmark & & & & \\
+			PWM & & \checkmark & & \checkmark & \checkmark & \\
+			IoNT vs IIoT & & \checkmark & & & & \checkmark \\
+			Phy and DL in CAN & & \checkmark & & & & \\
+			Voltage Follower & & \checkmark & & & & \checkmark \\
+			Wisdom vs. Knowledge & & & \checkmark & & \checkmark & \\
+			IIoT & & & \checkmark & & & \\
+			User vs. Kernel Space & & & \checkmark & & & \\
+			Zigbee vs. 6LoWPAN & & & \checkmark & & \checkmark & \\
+			Gtk vs. Qt & & & \checkmark & & & \\
+			802.15.4 & & & \checkmark & & & \\
+			git & & & \checkmark & & &\\
+			Diode Clamping Circuit & & & & \checkmark & \checkmark & \\
+			Bounce & & & & \checkmark & & \checkmark \\
+			chown vs. chmod & & & \checkmark & & & \\
+			GPIO-KEYS & & & & \checkmark & \checkmark & \checkmark \\
+			PoW in Blockchain & & & & \checkmark & & \\
+			Distributed vs. Centralised VC & & & & \checkmark &
+			\checkmark & \\
+			XACML & & & & \checkmark & & \\
+			No-OS Programming & & & & & & \checkmark \\
+			atime & & & & & & \checkmark \\
+			Data vs. Information & & & & & & \checkmark \\
+			DTO & & & & & & \checkmark \\
+			Systemd vs. SystemV Init & & & & & & \checkmark \\
+			\hline
+			\hline
+		\end{tabular}
+	\end{table}
+	\begin{table}[h]
+		\centering
+		\caption{EE513 Connected Embedded Systems Long Questions}
+		\begin{tabular}{|c||c|c||c|c||c|c||}
+			\hline
+			\hline
+			Topic & 2019 & R & 2018 & R & 2017 & R \\
+			\hline
+			\hline
+			\hline
+		\end{tabular}
+	\end{table}
+\end{document}
