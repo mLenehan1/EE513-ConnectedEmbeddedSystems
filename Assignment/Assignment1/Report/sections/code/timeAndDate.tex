@@ -1,0 +1,10 @@
+The provided code contains all of the functionality required to connect to the
+RTC, read and display the current time. These features were initially extracted
+into methods in order to make the code more modular. To read the time and date,
+the I2C bus connection must be opened, the device address must be connected to,
+the read address must be specified, and the values must be read into a buffer.
+The desired values can then be displayed from the buffer.
+
+In the case of the Raspberry Pi, the RTC is on I2C bus 1. As such, the code for
+opening this connection is as follows:
+

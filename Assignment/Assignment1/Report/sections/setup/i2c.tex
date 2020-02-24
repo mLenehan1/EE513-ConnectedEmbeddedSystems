@@ -1,0 +1,34 @@
+In order to setup I2C on the Raspberry Pi 3 Model B+, the I2C bus must first be
+enabled. This is achieved by executing the command ``raspi-config''. Navigating
+to the BLANK tab, and selecting BLANK to enable the bus.
+
+Once the circuit is connected, the i2ctools package must be installed in order
+to verify the connection. The package can be installed by executing the
+following command:
+
+\begin{lstlisting}[language=bash]
+	sudo apt install i2c-tools
+\end{lstlisting}
+
+Once installed the I2C bus can be scanned using the ``i2cdetect command''. The
+``-l'' option lists the installed busses.
+
+\begin{lstlisting}[language=bash]
+	i2cdetect -l
+\end{lstlisting}
+
+The output of this command corresponds to the I2C bus that the device is
+connected to. Using the ``-r'' option, bus 1 can be scanned using
+the SMBus ``receive byte'' method. The ``-y'' option in this case disables user
+input for confirmation.
+
+\begin{lstlisting}[language=bash]
+	i2cdetect -y -r 1
+\end{lstlisting}
+
+Finally the ``i2cdump'' command can be used to dump the contents of the
+specified address, in this case ``0x68'' on bus 1:
+
+\begin{lstlisting}[language=bash]
+	i2cdump -y 1 0x68
+\end{lstlisting}
