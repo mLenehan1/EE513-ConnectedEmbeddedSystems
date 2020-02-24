@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string>
 #include<fcntl.h>
 #include<sys/ioctl.h>
 #include<linux/i2c.h>
@@ -8,8 +7,6 @@
 
 class DS3231{
     private:
-    char reg[1];
-    int file;
     int bcdToDec();
     int openBus();
     int connectSlave();
@@ -18,7 +15,6 @@ class DS3231{
     protected:
     public:
     DS3231();
-    DS3231(char reg);
     int readTimeAndDate();
     int setTimeAndDate();
     int readTemp();
