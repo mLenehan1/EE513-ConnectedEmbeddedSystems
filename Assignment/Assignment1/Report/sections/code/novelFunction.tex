@@ -1,0 +1,18 @@
+For the novel functionality, it was decided that it would be a useful feature to
+be able to initialize the RTC time based on the current system time. This was
+done using a combination of file I/O operations, and a system call to the Linux
+``date'' utility. This utility allows for the formatting of the output based on
+a number of input arguments. In this case the arguments ``+\%S \%M \%H \%u \%d \%m
+\%Y'' specify to output the seconds, minutes, hours, weekday number, date, month,
+and year, delimited by spaces.
+
+The output of the ``date'' command is passed into a temporary file, ``tmp'' from
+which it can be read, with the symbols delimited by the whitespace. The values
+are placed in a string vector via the ``push\_back'' method. The temporary file
+is then closed and deleted. The vector values are converted to integers using
+the ``stoi'' function, and placed in separate time and date character arrays,
+from which they can be passed into the ``writeTime'' and ``writeDate''
+functions.
+
+\lstinputlisting[language=C++, caption={Novel Function - Initialize RTC time
+from System Time}, label={lst:novel}]{snippets/novel.cpp}

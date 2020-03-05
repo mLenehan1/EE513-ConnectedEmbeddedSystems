@@ -1,0 +1,14 @@
+The temperature value can be read from the RTC in much the same way as the time,
+however, the values within the temperature registers are stored in two's
+compliment representation, with the upper two bits of the least significant bits
+register representing a ratio of the degree value. With a precision of $\pm$
+0.25 degrees, the LSB bits can represent a 0.00 degrees (bits 00), 0.25 degrees
+(bits 01), 0.50 degrees (bits 10), and 0.75 degrees (bits 11).
+
+\lstinputlisting[languag=C++, caption={readTemp Function}]{snippets/temp.cpp}
+
+In order to extract the upper two bits of a byte, a bitwise right shift by 6
+places is used. Multiplying 100 by the new value and dividing by 4 gives the
+degrees ratio value. This can then be printed to the screen. The temperature MSB
+value is stored in the register indexed `17' with the LSB in the register
+indexed `18'.

@@ -17,8 +17,21 @@ Connecting these pins results in the following layout:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.45\textwidth, angle=90]{images/circuit}
-	\caption{I2C connection from RTC to Raspberry Pi}
-	\label{fig:i2c}
+	\caption{I2C connection from the RTC to the Raspberry Pi}
+	\label{fig:images-i2c}
 \end{figure}
 
 The physical circuit appears as follows:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/phyCircuit}
+	\caption{Physical connection from the RTC to the Raspberry Pi}
+	\label{fig:images-phyCircuit}
+\end{figure}
+
+The RTC breakout is connected to a breadboard via the connected male header
+pins. Four female to male wires connect the Raspberry Pi male GPIO pins to the
+breadboard. The wire colours in Figure \ref{fig:images-phyCircuit} are the same
+as in Figure \ref{fig:images-i2c}, with the exception of the ground wire, which
+in the case of the physical circuit is blue.

@@ -1,0 +1,13 @@
+Each of the required read and write functions of the assignment were implemented.
+The novel functionality was also implemented. Documentation was created
+using ``Doxygen'' and can be found in the submit git repository.
+
+The interrupt
+did not operate as expected. Reading the datasheet indicates that the interrupt
+bit being set high while the alarm flag is low would result in no output on the
+square wave output, however the exact opposite is true, with no output on the
+pin only if the alarm flag is high.
+
+Overall a lot was learned with regards to integrating hardware with an embedded
+Linux system, including how to communicate via I2C, and how to perform
+integration testing.

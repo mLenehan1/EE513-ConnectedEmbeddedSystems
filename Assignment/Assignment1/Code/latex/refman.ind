@@ -1,0 +1,72 @@
+\begin{theindex}
+
+  \item {clear\+Alarms}
+    \subitem {D\+S3231}, \hyperpage{8}
+  \item {connect\+Device}
+    \subitem {I2\+C\+Device}, \hyperpage{11}
+
+  \indexspace
+
+  \item {D\+S3231}, \hyperpage{7}
+    \subitem {clear\+Alarms}, \hyperpage{8}
+    \subitem {read\+Alarms}, \hyperpage{8}
+    \subitem {read\+Temp}, \hyperpage{8}
+    \subitem {read\+Time\+And\+Date}, \hyperpage{8}
+    \subitem {set\+Alarms}, \hyperpage{9}
+    \subitem {set\+Interrupt}, \hyperpage{9}
+    \subitem {sq\+Wave\+Gen}, \hyperpage{9}
+    \subitem {sys\+Time\+R\+T\+C\+Init}, \hyperpage{9}
+    \subitem {write\+Date}, \hyperpage{9}
+    \subitem {write\+Time}, \hyperpage{10}
+
+  \indexspace
+
+  \item {I2\+C\+Device}, \hyperpage{10}
+    \subitem {connect\+Device}, \hyperpage{11}
+    \subitem {open\+Bus}, \hyperpage{11}
+    \subitem {read\+Buffer}, \hyperpage{11}
+    \subitem {reset\+Read\+Addr}, \hyperpage{11}
+    \subitem {setup\+Proc}, \hyperpage{11}
+    \subitem {write\+To\+Reg}, \hyperpage{12}
+
+  \indexspace
+
+  \item {open\+Bus}
+    \subitem {I2\+C\+Device}, \hyperpage{11}
+
+  \indexspace
+
+  \item {read\+Alarms}
+    \subitem {D\+S3231}, \hyperpage{8}
+  \item {read\+Buffer}
+    \subitem {I2\+C\+Device}, \hyperpage{11}
+  \item {read\+Temp}
+    \subitem {D\+S3231}, \hyperpage{8}
+  \item {read\+Time\+And\+Date}
+    \subitem {D\+S3231}, \hyperpage{8}
+  \item {reset\+Read\+Addr}
+    \subitem {I2\+C\+Device}, \hyperpage{11}
+
+  \indexspace
+
+  \item {set\+Alarms}
+    \subitem {D\+S3231}, \hyperpage{9}
+  \item {set\+Interrupt}
+    \subitem {D\+S3231}, \hyperpage{9}
+  \item {setup\+Proc}
+    \subitem {I2\+C\+Device}, \hyperpage{11}
+  \item {sq\+Wave\+Gen}
+    \subitem {D\+S3231}, \hyperpage{9}
+  \item {sys\+Time\+R\+T\+C\+Init}
+    \subitem {D\+S3231}, \hyperpage{9}
+
+  \indexspace
+
+  \item {write\+Date}
+    \subitem {D\+S3231}, \hyperpage{9}
+  \item {write\+Time}
+    \subitem {D\+S3231}, \hyperpage{10}
+  \item {write\+To\+Reg}
+    \subitem {I2\+C\+Device}, \hyperpage{12}
+
+\end{theindex}

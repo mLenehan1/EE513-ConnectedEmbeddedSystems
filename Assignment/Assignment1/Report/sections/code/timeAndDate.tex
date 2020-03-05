@@ -1,10 +1,23 @@
-The provided code contains all of the functionality required to connect to the
-RTC, read and display the current time. These features were initially extracted
-into methods in order to make the code more modular. To read the time and date,
-the I2C bus connection must be opened, the device address must be connected to,
-the read address must be specified, and the values must be read into a buffer.
-The desired values can then be displayed from the buffer.
+To read the time and date, the I2C bus connection must be opened, the device
+address must be connected to, the read address must be specified, and the values
+must be read into a buffer.
+This functionality was implemented within the ``I2CDevice'' class. The
+``setupProc'' method calls the ``openBus'', ``connectDevice'', ``resetReadAddr''
+and ``readBuffer'' methods each time an object of the I2CDevice class is
+created, opening the connection to the device.
 
-In the case of the Raspberry Pi, the RTC is on I2C bus 1. As such, the code for
-opening this connection is as follows:
+\lstinputlisting[language=C++, caption={setupProc Function}]{snippets/setupProc.cpp}
 
+From the read buffer, the desired values can be displayed. This functionality is
+implemented using the ``DS3231'' class ``readTimeAndDate'' method:
+
+\lstinputlisting[language=C++, caption={readTimeAndDate Function}]{snippets/readTandD.cpp}
+
+This method reads from the registers indexed by values `2', `1', and `0', which
+are the hours, minutes, and seconds registers respectively, printing their
+values in decimal form. As the values read from these registers are in binary
+coded decimal format, the provided ``bcdToDec'' function is used to convert
+them. The date values are read from registers `4', `5', and `6', which are the
+day, month and year registers respectively. These values are also stored in BCD
+format, and so the ``bcdToDec'' function must be used for the purpose of
+printing.

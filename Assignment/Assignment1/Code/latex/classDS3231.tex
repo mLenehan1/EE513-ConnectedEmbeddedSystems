@@ -1,0 +1,141 @@
+\hypertarget{classDS3231}{}\section{D\+S3231 Class Reference}
+\label{classDS3231}\index{D\+S3231@{D\+S3231}}
+
+
+Inheritance diagram for D\+S3231\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classDS3231__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+S3231\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classDS3231__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDS3231_a35b7baeaa8c8449c0c08b37a7ef0f21b}\label{classDS3231_a35b7baeaa8c8449c0c08b37a7ef0f21b}} 
+{\bfseries D\+S3231} (char)
+\item 
+\mbox{\Hypertarget{classDS3231_acdbdfefb5bd96582ef46703a375a96e6}\label{classDS3231_acdbdfefb5bd96582ef46703a375a96e6}} 
+{\bfseries D\+S3231} (bool)
+\item 
+void \hyperlink{classDS3231_ae7630e2f75c91d116f503292163fc2e9}{sys\+Time\+R\+T\+C\+Init} ()
+\item 
+void \hyperlink{classDS3231_a847c85a36bf3ab13c942b91733bbbe24}{read\+Time\+And\+Date} ()
+\item 
+void \hyperlink{classDS3231_a8780408536a9eedfe2f04d4085a103b0}{write\+Time} (char $\ast$)
+\item 
+void \hyperlink{classDS3231_aa8b6b1279d7f7e04cd4a3797d620cf61}{write\+Date} (char $\ast$)
+\item 
+void \hyperlink{classDS3231_aee6cdb9ddbce1c2efe76d50cd042fb08}{read\+Alarms} ()
+\item 
+void \hyperlink{classDS3231_a78d2a067addcb2b5a43962e6442ca060}{set\+Alarms} (char $\ast$)
+\item 
+void \hyperlink{classDS3231_a9529ddedfae9e6e427197c26ac7c8f0b}{read\+Temp} ()
+\item 
+void \hyperlink{classDS3231_a43d0b34f3adb3abd8529ccafb23b3c66}{set\+Interrupt} (bool, bool)
+\item 
+void \hyperlink{classDS3231_a0a56ae678b3708a07e3d8878774b42a8}{sq\+Wave\+Gen} (int, bool)
+\item 
+void \hyperlink{classDS3231_ad402ba1ca960dd1d1da5fc68d806696e}{clear\+Alarms} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDS3231_ad402ba1ca960dd1d1da5fc68d806696e}\label{classDS3231_ad402ba1ca960dd1d1da5fc68d806696e}} 
+\index{D\+S3231@{D\+S3231}!clear\+Alarms@{clear\+Alarms}}
+\index{clear\+Alarms@{clear\+Alarms}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{clear\+Alarms()}{clearAlarms()}}
+{\footnotesize\ttfamily void D\+S3231\+::clear\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the R\+TC Alarm Flags
+
+Clears the Alarm 1 and Alarm 2 Flag bits of register 0x0F.\mbox{\Hypertarget{classDS3231_aee6cdb9ddbce1c2efe76d50cd042fb08}\label{classDS3231_aee6cdb9ddbce1c2efe76d50cd042fb08}} 
+\index{D\+S3231@{D\+S3231}!read\+Alarms@{read\+Alarms}}
+\index{read\+Alarms@{read\+Alarms}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{read\+Alarms()}{readAlarms()}}
+{\footnotesize\ttfamily void D\+S3231\+::read\+Alarms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the R\+TC Alarms
+
+Prints the values stored in the Alarm 1 and Alarm 2 registers (0x07 -\/ 0x0D).\mbox{\Hypertarget{classDS3231_a9529ddedfae9e6e427197c26ac7c8f0b}\label{classDS3231_a9529ddedfae9e6e427197c26ac7c8f0b}} 
+\index{D\+S3231@{D\+S3231}!read\+Temp@{read\+Temp}}
+\index{read\+Temp@{read\+Temp}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{read\+Temp()}{readTemp()}}
+{\footnotesize\ttfamily void D\+S3231\+::read\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the R\+TC temperature
+
+Temperature has a precision of 0.\+25 degrees. The upper part of the temperature is in reg 1 The lower part of the temperature is in tbe upper two bits of reg 2\mbox{\Hypertarget{classDS3231_a847c85a36bf3ab13c942b91733bbbe24}\label{classDS3231_a847c85a36bf3ab13c942b91733bbbe24}} 
+\index{D\+S3231@{D\+S3231}!read\+Time\+And\+Date@{read\+Time\+And\+Date}}
+\index{read\+Time\+And\+Date@{read\+Time\+And\+Date}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{read\+Time\+And\+Date()}{readTimeAndDate()}}
+{\footnotesize\ttfamily void D\+S3231\+::read\+Time\+And\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the R\+TC Time and Date
+
+Prints the values stored in registers 2, 1, and 0 (Hours, Minutes, Seconds), followed by registers 3, 4, 5, and 6 ( Day, Date, Month, Year).\mbox{\Hypertarget{classDS3231_a78d2a067addcb2b5a43962e6442ca060}\label{classDS3231_a78d2a067addcb2b5a43962e6442ca060}} 
+\index{D\+S3231@{D\+S3231}!set\+Alarms@{set\+Alarms}}
+\index{set\+Alarms@{set\+Alarms}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{set\+Alarms()}{setAlarms()}}
+{\footnotesize\ttfamily void D\+S3231\+::set\+Alarms (\begin{DoxyParamCaption}\item[{char $\ast$}]{times }\end{DoxyParamCaption})}
+
+Set the R\+TC Alarm Times/\+Dates
+
+Writes to the Alarm registers (0x07 -\/ 0x0D). Sets all \char`\"{}\+Alarm Mask Bits\char`\"{} to 0 -\/ Alarm will trigger when date, hours, minutes and seconds match\mbox{\Hypertarget{classDS3231_a43d0b34f3adb3abd8529ccafb23b3c66}\label{classDS3231_a43d0b34f3adb3abd8529ccafb23b3c66}} 
+\index{D\+S3231@{D\+S3231}!set\+Interrupt@{set\+Interrupt}}
+\index{set\+Interrupt@{set\+Interrupt}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{set\+Interrupt()}{setInterrupt()}}
+{\footnotesize\ttfamily void D\+S3231\+::set\+Interrupt (\begin{DoxyParamCaption}\item[{bool}]{alarm1,  }\item[{bool}]{alarm2 }\end{DoxyParamCaption})}
+
+Set the R\+TC Alarm Interrupt
+
+Takes two boolean values representing the status of alarms 1 and 2. If either are to be set, the interrupt is set, along with the corresponding alarm enable bit. If neither are set, the interrupt bit is cleared, i.\+e. the Square Wave Generator is enabled.\mbox{\Hypertarget{classDS3231_a0a56ae678b3708a07e3d8878774b42a8}\label{classDS3231_a0a56ae678b3708a07e3d8878774b42a8}} 
+\index{D\+S3231@{D\+S3231}!sq\+Wave\+Gen@{sq\+Wave\+Gen}}
+\index{sq\+Wave\+Gen@{sq\+Wave\+Gen}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{sq\+Wave\+Gen()}{sqWaveGen()}}
+{\footnotesize\ttfamily void D\+S3231\+::sq\+Wave\+Gen (\begin{DoxyParamCaption}\item[{int}]{freq\+Option,  }\item[{bool}]{stop\+Interrupt }\end{DoxyParamCaption})}
+
+Enable the Square Wave Generator at the desired frequency
+
+Takes an integer value representing one of the four available frequencies of the square wave generator. A boolean represents the toggling of the interrupt bit, which enables the generator is set low. Each case of the switch statement performs the required bit modifications for the \char`\"{}\+Rate Select\char`\"{} bits of register 0x0E.\mbox{\Hypertarget{classDS3231_ae7630e2f75c91d116f503292163fc2e9}\label{classDS3231_ae7630e2f75c91d116f503292163fc2e9}} 
+\index{D\+S3231@{D\+S3231}!sys\+Time\+R\+T\+C\+Init@{sys\+Time\+R\+T\+C\+Init}}
+\index{sys\+Time\+R\+T\+C\+Init@{sys\+Time\+R\+T\+C\+Init}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{sys\+Time\+R\+T\+C\+Init()}{sysTimeRTCInit()}}
+{\footnotesize\ttfamily void D\+S3231\+::sys\+Time\+R\+T\+C\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the R\+TC time based on the output of the Linux \char`\"{}date\char`\"{} utility.
+
+This function creates a temporary file, runs the command line \char`\"{}date\char`\"{} utility -\/ formatting to give time (sec min hr) and date (day, date, month, year), and stores the output in the temporary file. This file is read into a string vector and the temporary file is closed and deleted. The time values and date values are added to separate char arrays for writing to the R\+TC.\mbox{\Hypertarget{classDS3231_aa8b6b1279d7f7e04cd4a3797d620cf61}\label{classDS3231_aa8b6b1279d7f7e04cd4a3797d620cf61}} 
+\index{D\+S3231@{D\+S3231}!write\+Date@{write\+Date}}
+\index{write\+Date@{write\+Date}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{write\+Date()}{writeDate()}}
+{\footnotesize\ttfamily void D\+S3231\+::write\+Date (\begin{DoxyParamCaption}\item[{char $\ast$}]{date }\end{DoxyParamCaption})}
+
+Write the input dates to the R\+TC date registers
+
+Takes a character array containing \char`\"{}date\char`\"{} values to be written. Calls the \char`\"{}write\+To\+Reg\char`\"{} function to write the required value to the required registers. Defined values are used to reference the day, date, month. and year registers (0x03, 0x04, 0x05 and 0x06). A check is performed to ensure the date is within the correct range\mbox{\Hypertarget{classDS3231_a8780408536a9eedfe2f04d4085a103b0}\label{classDS3231_a8780408536a9eedfe2f04d4085a103b0}} 
+\index{D\+S3231@{D\+S3231}!write\+Time@{write\+Time}}
+\index{write\+Time@{write\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection{\texorpdfstring{write\+Time()}{writeTime()}}
+{\footnotesize\ttfamily void D\+S3231\+::write\+Time (\begin{DoxyParamCaption}\item[{char $\ast$}]{times }\end{DoxyParamCaption})}
+
+Write the input times to the R\+TC time registers
+
+Takes a character array containing \char`\"{}time\char`\"{} values to be written. Calls the \char`\"{}write\+To\+Reg\char`\"{} function to write the required value to the required registers. Defined values are used to reference the second, minute and hour registers (0x00, 0x01, and 0x02).
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+S3231.\+h\item 
+D\+S3231.\+cpp\end{DoxyCompactItemize}

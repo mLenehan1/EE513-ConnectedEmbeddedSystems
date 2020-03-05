@@ -1,0 +1,102 @@
+\hypertarget{classI2CDevice}{}\section{I2\+C\+Device Class Reference}
+\label{classI2CDevice}\index{I2\+C\+Device@{I2\+C\+Device}}
+
+
+{\ttfamily \#include $<$I2\+C\+Device.\+h$>$}
+
+
+
+Inheritance diagram for I2\+C\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classI2CDevice__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classI2CDevice_a813e9eaaed2de0a6089e061e925f25a7}\label{classI2CDevice_a813e9eaaed2de0a6089e061e925f25a7}} 
+{\bfseries I2\+C\+Device} (int)
+\item 
+\mbox{\Hypertarget{classI2CDevice_a5967d5f4321fdb12006f1d3892f050f8}\label{classI2CDevice_a5967d5f4321fdb12006f1d3892f050f8}} 
+{\bfseries I2\+C\+Device} (int, char)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classI2CDevice_a5fde7fd1a0060a67fc79508cadf6aace}{open\+Bus} ()
+\item 
+void \hyperlink{classI2CDevice_a97ce3e695080f667e4acfa4c6fe82ba4}{connect\+Device} ()
+\item 
+void \hyperlink{classI2CDevice_a683bdc938beaea0fc8af85f3996c4aa6}{reset\+Read\+Addr} ()
+\item 
+char $\ast$ \hyperlink{classI2CDevice_a46507a420f6865581ad41d6198897ee7}{read\+Buffer} ()
+\item 
+void \hyperlink{classI2CDevice_a390fcd7a411fbc92509a69c1d04660a2}{write\+To\+Reg} (unsigned int, char)
+\item 
+void \hyperlink{classI2CDevice_aa3a0bbea776167210f22dc03580757b1}{setup\+Proc} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classI2CDevice_aab6762690a7288b436e408752fedc1ad}\label{classI2CDevice_aab6762690a7288b436e408752fedc1ad}} 
+int {\bfseries file}
+\item 
+\mbox{\Hypertarget{classI2CDevice_a3c99b92a232fc4a7394e97caec29bddf}\label{classI2CDevice_a3c99b92a232fc4a7394e97caec29bddf}} 
+std\+::vector$<$ char $>$ {\bfseries buf}
+\item 
+\mbox{\Hypertarget{classI2CDevice_a59a88fa7b1efd226ffd97c08fb5ece6a}\label{classI2CDevice_a59a88fa7b1efd226ffd97c08fb5ece6a}} 
+char {\bfseries addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classI2CDevice}{I2\+C\+Device} Class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classI2CDevice_a97ce3e695080f667e4acfa4c6fe82ba4}\label{classI2CDevice_a97ce3e695080f667e4acfa4c6fe82ba4}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!connect\+Device@{connect\+Device}}
+\index{connect\+Device@{connect\+Device}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{connect\+Device()}{connectDevice()}}
+{\footnotesize\ttfamily void I2\+C\+Device\+::connect\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Open the connection to the I2C Device\mbox{\Hypertarget{classI2CDevice_a5fde7fd1a0060a67fc79508cadf6aace}\label{classI2CDevice_a5fde7fd1a0060a67fc79508cadf6aace}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!open\+Bus@{open\+Bus}}
+\index{open\+Bus@{open\+Bus}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{open\+Bus()}{openBus()}}
+{\footnotesize\ttfamily int I2\+C\+Device\+::open\+Bus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Open the Bus connection to the I2C Device\mbox{\Hypertarget{classI2CDevice_a46507a420f6865581ad41d6198897ee7}\label{classI2CDevice_a46507a420f6865581ad41d6198897ee7}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!read\+Buffer@{read\+Buffer}}
+\index{read\+Buffer@{read\+Buffer}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{read\+Buffer()}{readBuffer()}}
+{\footnotesize\ttfamily char $\ast$ I2\+C\+Device\+::read\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads from the I2C devices registers\mbox{\Hypertarget{classI2CDevice_a683bdc938beaea0fc8af85f3996c4aa6}\label{classI2CDevice_a683bdc938beaea0fc8af85f3996c4aa6}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!reset\+Read\+Addr@{reset\+Read\+Addr}}
+\index{reset\+Read\+Addr@{reset\+Read\+Addr}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{reset\+Read\+Addr()}{resetReadAddr()}}
+{\footnotesize\ttfamily void I2\+C\+Device\+::reset\+Read\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the initial read address for the I2C Device\mbox{\Hypertarget{classI2CDevice_aa3a0bbea776167210f22dc03580757b1}\label{classI2CDevice_aa3a0bbea776167210f22dc03580757b1}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!setup\+Proc@{setup\+Proc}}
+\index{setup\+Proc@{setup\+Proc}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{setup\+Proc()}{setupProc()}}
+{\footnotesize\ttfamily void I2\+C\+Device\+::setup\+Proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup Procedure for I2C Devices
+
+Calls the functions required to open an I2C connection to a device, and read the buffers of this device.\mbox{\Hypertarget{classI2CDevice_a390fcd7a411fbc92509a69c1d04660a2}\label{classI2CDevice_a390fcd7a411fbc92509a69c1d04660a2}} 
+\index{I2\+C\+Device@{I2\+C\+Device}!write\+To\+Reg@{write\+To\+Reg}}
+\index{write\+To\+Reg@{write\+To\+Reg}!I2\+C\+Device@{I2\+C\+Device}}
+\subsubsection{\texorpdfstring{write\+To\+Reg()}{writeToReg()}}
+{\footnotesize\ttfamily void I2\+C\+Device\+::write\+To\+Reg (\begin{DoxyParamCaption}\item[{unsigned int}]{reg,  }\item[{char}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write to the I2C Devices registers
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+I2\+C\+Device.\+h\item 
+I2\+C\+Device.\+cpp\end{DoxyCompactItemize}

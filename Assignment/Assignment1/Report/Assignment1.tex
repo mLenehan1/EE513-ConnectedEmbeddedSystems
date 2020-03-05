@@ -8,16 +8,20 @@
 \usepackage{amsmath, amssymb}
 \usepackage{float}
 \usepackage{xcolor}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \usepackage{listings}
 \lstdefinestyle{code}{
+	backgroundcolor=\color{backcolor},
 	commentstyle=\color{codegreen},
 	keywordstyle=\color{magenta},
 	stringstyle=\color{codepurple},
+	frame=single,
+	captionpos=b,
 	showspaces=false,
 	showstringspaces=false,
-	breaklines=true
+	breaklines=true,
 }
 \lstset{style=code}
 \usepackage[hidelinks]{hyperref}
@@ -51,19 +55,19 @@
 \pagenumbering{alph}
 \input{cover/declaration}
 \pagenumbering{arabic}
-\input{sections/abstract}
 \tableofcontents
+\clearpage
+\lstlistoflistings
 \clearpage
 \section{Introduction}
 \input{sections/introduction}
 \section{Assignment Setup}
 \subsection{RTC Circuit}
 \input{sections/setup/circuit}
-\subsection{I2C Discovery and Testing}
+\subsection{I2C Discovery and Testing}\label{I2Cdisc}
 \input{sections/setup/i2c}
 \section{C++ Code}
-Using the provided C code, a DS3231 class is created, with methods each of the
-required functions.
+\input{sections/code/intro}
 \subsection{Reading Time and Date}
 \input{sections/code/timeAndDate}
 \subsection{Reading Temperature}
@@ -72,12 +76,34 @@ required functions.
 \input{sections/code/setTime}
 \subsection{Setting Alarms and Interrupts}
 \input{sections/code/alarms}
+\subsection{Square Wave Generator}
+\input{sections/code/sqWave}
 \subsection{Novel Functionality}
 \input{sections/code/novelFunction}
+\section{Testing}
+\input{sections/testing/test}
 \section{Linux Kernel Module}
 \input{sections/lkm/lkm}
 \section{Conclusion}
 \input{sections/conclusion}
 \clearpage
 \printbibliography
+\appendix
+\section{Appendix}
+\subsection{DS3231.c - Provided}
+\lstinputlisting[language=C]{sections/appendices/DS3231.c}
+\subsection{I2CDevice.h}
+\lstinputlisting[language=C++]{sections/appendices/I2CDevice.h}
+\subsection{I2CDevice.cpp}
+\lstinputlisting[language=C++]{sections/appendices/I2CDevice.cpp}
+\subsection{DS3231.h}
+\lstinputlisting[language=C++]{sections/appendices/DS3231.h}
+\subsection{DS3231.cpp}
+\lstinputlisting[language=C++]{sections/appendices/DS3231.cpp}
+\subsection{main.cpp - Novel Function Test}
+\lstinputlisting[language=C++]{sections/appendices/main.cpp}
+\subsection{test.cpp - Test Program}
+\lstinputlisting[language=C++]{sections/appendices/test.cpp}
+\subsection{System Service Script}
+\lstinputlisting[language=bash]{sections/appendices/pi_hwclock.service}
 \end{document}

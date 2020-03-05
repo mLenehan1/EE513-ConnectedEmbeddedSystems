@@ -1,0 +1,20 @@
+In order to develop C++ code for the Raspberry Pi, the code must be compiled via
+an ARM compatible C++ compiler. This can be achieved in a number of ways,
+including cross-compilation and compilation on the target hardware (i.e. the
+Raspberry Pi). As the Raspberry Pi is using the Raspbian ``Stretch'' image,
+there is no graphical user environment, i.e. no window manager, or desktop
+environment. As such, remote development was used to develop on the Raspberry
+Pi. The ``Visual Studio Code'' IDE has the ability to connect to a host via SSH,
+allowing a developer to work on the targets filesystem within the IDE. A
+terminal can also be opened from within the IDE, allowing terminal commands,
+including compilation commands, to be run from within the IDE.
+
+Using the provided C code, an I2C base class was created. This class contains
+all of the generic I2C code required for opening I2C bus connections, device
+connections, setting read addresses, and reading from registers.
+
+A DS3231 class, which is a child of the I2CDevice class, has a number of methods
+which are specific to the DS3231. These include all of the required methods for
+reading and writing time, date, alarm, interrupt, and temperature data to the
+device. All of the code used for this assignment can be found within the
+appendices.
