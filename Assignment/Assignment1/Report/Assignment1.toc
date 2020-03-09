@@ -1,0 +1,66 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {UKenglish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Assignment Setup}{4}{section.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}RTC Circuit}{4}{subsection.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}I2C Discovery and Testing}{6}{subsection.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}C++ Code}{7}{section.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Reading Time and Date}{8}{subsection.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Reading Temperature}{9}{subsection.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Setting Time and Date}{10}{subsection.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Setting Alarms and Interrupts}{12}{subsection.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Square Wave Generator}{14}{subsection.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Novel Functionality}{16}{subsection.3.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Testing}{18}{section.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.1}Test 1: Read Time and Date}{20}{subsubsection.4.0.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.2}Test 2: Write Time}{20}{subsubsection.4.0.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.3}Test 3: Write Date}{20}{subsubsection.4.0.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.4}Test 4: Read Alarms}{20}{subsubsection.4.0.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.5}Test 5: Write Alarms}{21}{subsubsection.4.0.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.6}Test 6: Set Interrupt}{21}{subsubsection.4.0.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.7}Test 7: Square Wave Generator}{22}{subsubsection.4.0.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.8}Test 8: Read Temperature}{22}{subsubsection.4.0.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.0.9}Test 9: Novel Function}{22}{subsubsection.4.0.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Linux Kernel Module}{23}{section.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Conclusion}{26}{section.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Appendix}{28}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}DS3231.c - Provided}{28}{subsection.A.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2}I2CDevice.h}{29}{subsection.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.3}I2CDevice.cpp}{30}{subsection.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.4}DS3231.h}{33}{subsection.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.5}DS3231.cpp}{35}{subsection.A.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.6}main.cpp - Novel Function Test}{49}{subsection.A.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.7}test.cpp - Test Program}{49}{subsection.A.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.8}System Service Script}{51}{subsection.A.8}% 
